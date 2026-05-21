@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu toggle
+    // 1. Mobile menu toggle
     const menuBtn = document.getElementById('menu-btn');
     const navLinks = document.getElementById('nav-links');
 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Language selector alerts
+    // 2. Language selector alerts
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Handle Reservation Form Submission (on reservation.html)
+    // 3. Handle Reservation Form Submission (on reservation.html)
     const reservationForm = document.getElementById('reservation-form-page');
     const formSuccess = document.getElementById('form-success-page');
     const resetBtn = document.getElementById('reset-reservation');
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (reservationForm) {
         reservationForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            // Hide form, show success
+            // Hide form, show success with animation
             reservationForm.style.display = 'none';
             formSuccess.classList.remove('hidden');
         });
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Social buttons alerts (if clicked on dummy links)
+    // 4. Social buttons alerts
     document.querySelectorAll('.social-buttons a').forEach(btn => {
         btn.addEventListener('click', (e) => {
             if(btn.getAttribute('href') === '#') {
@@ -52,5 +52,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Redirection vers notre page officielle prochainement !');
             }
         });
+    });
+
+    // 5. Intersection Observer for Scroll Animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15 // Triggers when 15% of the element is visible
+    };
+
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target); // Animate only once
+            }
+        });
+    }, observerOptions);
+
+    // Select all elements with the 'animate-on-scroll' class
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        scrollObserver.observe(el);
     });
 });
