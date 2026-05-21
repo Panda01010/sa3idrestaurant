@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Livraison - Restaurant Sa3id Safi</title>
+    <meta name="description" content="Contactez le Restaurant Sa3id à Safi. Commandez via Glovo, Uber Eats ou WhatsApp pour une livraison rapide à domicile.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Restaurant Sa3id Logo">
+                <span>Sa3id</span>
+            </a>
+            <nav id="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Notre Menu</a>
+                <a href="about.html">Notre Histoire</a>
+                <a href="reservation.html">Réservation</a>
+                <a href="contact.html" class="active-link">Contact & Livraison</a>
+                <div class="lang-selector">
+                    <button>FR <i class="fas fa-chevron-down"></i></button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="lang-btn" data-lang="EN">EN</a>
+                        <a href="#" class="lang-btn" data-lang="AR">AR</a>
+                        <a href="#" class="lang-btn" data-lang="ES">ES</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/hero.png');">
+        <div class="container text-center">
+            <h1>Où Nous Trouver & Comment Commander</h1>
+            <p>Nous sommes toujours là pour vous. En plein centre-ville ou directement livrés à votre porte.</p>
+        </div>
+    </div>
+
+    <!-- Contact Info & Map Placeholder -->
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Text Info -->
+                <div class="content-text">
+                    <h2 class="section-title text-left">Venez Nous Rendre Visite</h2>
+                    <p>Le Restaurant Sa3id bénéficie d'un emplacement stratégique exceptionnel, en plein cœur de la ville de Safi. Situé juste à côté du célèbre rond-point et monument "Tajin Lkbir", nous sommes facilement accessibles que vous veniez du nord ou du sud de la ville. Notre grande façade illuminée est impossible à rater, et l'odeur alléchante de nos grillades vous guidera jusqu'à notre porte.</p>
+                    
+                    <div class="contact-details mt-20" style="background: var(--bg-light); padding: 30px; border-radius: 10px; border-left: 5px solid var(--primary-color);">
+                        <p style="margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); width: 30px; font-size: 1.5rem;"></i> <strong>Adresse :</strong> Centre de Safi, À côté de "Tajin Lkbir", Safi, Maroc</p>
+                        <p style="margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-clock" style="color: var(--primary-color); width: 30px; font-size: 1.5rem;"></i> <strong>Horaires :</strong> Ouvert tous les jours de 08h00 du matin jusqu'à Minuit (00h00). Service continu.</p>
+                        <p style="margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-phone-alt" style="color: var(--primary-color); width: 30px; font-size: 1.5rem;"></i> <strong>Téléphone :</strong> +212 6 00 00 00 00 (Ligne directe pour les urgences et réservations)</p>
+                        <p style="font-size: 1.1rem;"><i class="fas fa-envelope" style="color: var(--primary-color); width: 30px; font-size: 1.5rem;"></i> <strong>Email :</strong> contact@restaurantsa3id.ma</p>
+                    </div>
+
+                    <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-top: 40px; margin-bottom: 15px;">Nos Réseaux Sociaux</h3>
+                    <p>Rejoignez la grande famille Sa3id en ligne ! Suivez-nous pour être les premiers informés de nos nouvelles créations, de nos promotions flash et de nos jeux-concours exclusifs. Partagez vos photos avec le hashtag <strong>#TeamSa3id</strong> et tentez de gagner un repas gratuit chaque semaine.</p>
+                    <div class="social-buttons" style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="#" class="btn btn-primary" style="background: #E1306C;"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" class="btn btn-primary" style="background: #4267B2;"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#" class="btn btn-primary" style="background: #000000;"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </div>
+                </div>
+
+                <!-- Map / Image Area -->
+                <div class="content-image" style="background-image: url('assets/salad.png'); border-radius: 15px; min-height: 400px; position: relative;">
+                    <!-- Placeholder for an actual Google Map iframe -->
+                    <div style="position: absolute; bottom: 20px; left: 20px; background: rgba(255,255,255,0.9); padding: 15px; border-radius: 8px; font-weight: 600;">
+                        <i class="fas fa-location-arrow text-primary"></i> Plein Centre de Safi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section class="section bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Notre Service de Livraison Premium</h2>
+            <div class="long-text-block" style="margin-bottom: 40px;">
+                <p>Vous n'avez pas le temps ou la force de vous déplacer ? Pas de panique ! Le Restaurant Sa3id vient directement à vous. Nous avons mis en place une logistique de livraison ultra-performante pour que votre commande arrive chez vous aussi chaude et délicieuse que si vous étiez attablé chez nous. Nos emballages isothermes spéciaux préservent la chaleur de votre Tacos, le croustillant de vos frites et la fraîcheur de vos salades pendant tout le trajet.</p>
+                <p><strong>Zones de Livraison :</strong> Nous couvrons la majeure partie de la ville de Safi. Que vous habitiez à Sidi Bouzid pour profiter de la vue, au quartier Hay Mohammadi, à la Cité, ou en plein centre-ville, nos livreurs connaissent Safi comme leur poche et sauront trouver votre adresse en un temps record.</p>
+                <p>Pour commander, vous avez le choix. Nous sommes fiers d'être partenaires officiels des grandes plateformes internationales comme <strong>Glovo</strong> et <strong>Uber Eats</strong>, ce qui vous permet de suivre votre livreur en temps réel. Si vous préférez un contact plus direct, notre ligne <strong>WhatsApp</strong> est gérée par notre équipe dédiée qui prendra votre commande avec le sourire, vous enverra le menu digital, et vous confirmera le temps estimé d'arrivée.</p>
+            </div>
+
+            <h3 style="font-size: 2rem; margin-bottom: 30px;">Choisissez votre méthode de commande :</h3>
+            <div class="delivery-options">
+                <a href="https://wa.me/212600000000" class="delivery-btn whatsapp" target="_blank" style="padding: 20px 40px; font-size: 1.5rem;">
+                    <i class="fab fa-whatsapp"></i> Commander via WhatsApp
+                </a>
+                <a href="#" class="delivery-btn glovo" onclick="alert('Lien Glovo en cours d\'intégration !')" style="padding: 20px 40px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Glovo_logo.svg" alt="Glovo" width="120">
+                </a>
+                <a href="#" class="delivery-btn uber" onclick="alert('Lien Uber Eats en cours d\'intégration !')" style="padding: 20px 40px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Uber_Eats_2020_logo.svg" alt="Uber Eats" width="120">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo-footer">
+                    <img src="assets/logo.png" alt="Restaurant Sa3id Logo">
+                    <span>Sa3id</span>
+                </div>
+                <p>Livraison rapide. Goût authentique. À Safi, c'est Sa3id ou rien !</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Notre Menu</a></li>
+                    <li><a href="about.html">Notre Histoire</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Centre de Safi, Hda Tajin Lkbir</p>
+                <p><i class="fas fa-phone"></i> +212 600 000 000</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

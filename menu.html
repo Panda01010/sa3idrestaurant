@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Menu - Restaurant Sa3id Safi</title>
+    <meta name="description" content="Découvrez le menu complet du Restaurant Sa3id : Tacos, Shawarma, Pizza et Salades préparés avec des ingrédients frais à Safi.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Restaurant Sa3id Logo">
+                <span>Sa3id</span>
+            </a>
+            <nav id="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html" class="active-link">Notre Menu</a>
+                <a href="about.html">Notre Histoire</a>
+                <a href="reservation.html">Réservation</a>
+                <a href="contact.html">Contact & Livraison</a>
+                <div class="lang-selector">
+                    <button>FR <i class="fas fa-chevron-down"></i></button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="lang-btn" data-lang="EN">EN</a>
+                        <a href="#" class="lang-btn" data-lang="AR">AR</a>
+                        <a href="#" class="lang-btn" data-lang="ES">ES</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/hero.png');">
+        <div class="container text-center">
+            <h1>Notre Menu Détaillé</h1>
+            <p>Découvrez la richesse et la générosité de nos plats, préparés avec passion et savoir-faire.</p>
+        </div>
+    </div>
+
+    <!-- Intro Menu Text -->
+    <section class="section">
+        <div class="container">
+            <div class="long-text-block">
+                <h2 class="section-title">Une Symphonie de Saveurs Marocaines et Internationales</h2>
+                <p>Bienvenue dans la carte la plus gourmande de Safi ! Au Restaurant Sa3id, nous prenons la notion de menu très au sérieux. Nous ne voulions pas simplement vous proposer une longue liste de plats sans âme. Nous voulions créer une véritable expérience gastronomique adaptée au style de vie effréné d'aujourd'hui. C'est pourquoi notre carte est conçue comme un voyage culinaire, alliant l'authenticité des saveurs locales à la modernité des grands classiques du fast-food mondial.</p>
+                <p>Chaque catégorie de notre menu a été pensée pour répondre à toutes vos envies, que vous ayez une faim de loup après une longue journée de travail, ou que vous souhaitiez déguster un repas léger entre amis. La sélection de nos ingrédients est le pilier central de notre offre. Nous collaborons étroitement avec les meilleurs fournisseurs de la région de Safi. Les légumes qui composent nos salades fraîches proviennent directement des maraîchers locaux. Nos viandes sont scrupuleusement choisies pour leur fraîcheur, leur origine garantie, et leur qualité gustative supérieure. De plus, nos pains à Tacos, nos tortillas, et nos pâtes à Pizza sont confectionnés chaque matin dans nos cuisines pour garantir ce moelleux et ce croustillant si caractéristiques du Restaurant Sa3id.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items Detail -->
+    <section class="section bg-light">
+        <div class="container">
+            <!-- Tacos -->
+            <div class="content-grid mb-50">
+                <div class="content-image" style="background-image: url('assets/tacos.png'); border-radius: 15px;"></div>
+                <div class="content-text">
+                    <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 15px;">Le Véritable Tacos Marocain</h3>
+                    <p>Le joyau de la couronne du Restaurant Sa3id. Notre Tacos n'est pas un simple sandwich, c'est une institution. Imaginez une tortilla géante, grillée à la perfection dans notre presse spéciale jusqu'à obtenir un marquage doré et croustillant. À l'intérieur ? Un chef-d'œuvre. Vous avez le choix entre de la viande hachée marinée aux épices du souk, du poulet tendre finement émincé, ou notre fameux "Mixte" pour les indécis gourmands.</p>
+                    <p>Mais le véritable secret réside dans notre sauce fromagère maison. Contrairement aux sauces industrielles, la nôtre est préparée quotidiennement dans de grandes marmites, en mélangeant de la crème fraîche épaisse, de l'emmental râpé, une touche de gruyère et notre mélange d'épices top-secret. Accompagné de frites croustillantes à l'intérieur, c'est un repas complet, généreux et extrêmement satisfaisant. Commandez-le classique, ou ajoutez un supplément cordon bleu ou nuggets pour une expérience ultime. Une seule bouchée vous fera comprendre pourquoi toute la ville de Safi en parle.</p>
+                    <div class="price-action">
+                        <span class="price" style="font-size: 1.5rem; font-weight: 800;">À partir de 35 DH</span>
+                        <a href="contact.html" class="btn btn-primary">Commander ce Tacos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shawarma -->
+            <div class="content-grid reverse mb-50">
+                <div class="content-text">
+                    <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 15px;">Le Shawarma Authentique</h3>
+                    <p>Notre Shawarma est une déclaration d'amour à la cuisine levantine, adaptée au palais marocain exigeant. La préparation commence 24 heures à l'avance. Des filets de poulet frais sont plongés dans une marinade riche et complexe composée de yaourt nature, de jus de citron vert pressé, de paprika, de cardamome, d'ail frais écrasé et d'un filet d'huile d'olive de la région. Cette longue marinade garantit une viande d'une tendreté incroyable et gorgée de saveurs.</p>
+                    <p>La viande est ensuite rôtie lentement sur notre broche verticale. La chaleur caramélise les bords, créant ces petits morceaux croustillants irrésistibles que nos trancheurs découpent avec précision. Enveloppé dans un pain syrien frais et léger, nous y ajoutons des frites chaudes, des cornichons croquants pour l'acidité, et notre sauce à l'ail onctueuse (Toum), battue jusqu'à l'obtention d'une texture de nuage. C'est l'équilibre parfait entre la richesse de la viande, le piquant subtil de l'ail et la fraîcheur des condiments. Un classique indémodable, exécuté à la perfection.</p>
+                    <div class="price-action">
+                        <span class="price" style="font-size: 1.5rem; font-weight: 800;">À partir de 25 DH</span>
+                        <a href="contact.html" class="btn btn-primary">Commander ce Shawarma</a>
+                    </div>
+                </div>
+                <div class="content-image" style="background-image: url('assets/shawarma.png'); border-radius: 15px;"></div>
+            </div>
+
+            <!-- Pizza & Salad -->
+            <div class="long-text-block text-center mt-50">
+                <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 15px;">Nos Pizzas et Salades Fraîches</h3>
+                <p>Pour ceux qui préfèrent partager, nos Pizzas cuites au four sont incomparables. La pâte repose pendant 48 heures pour développer une texture alvéolée, fine au centre et généreusement boursouflée sur les bords. La sauce tomate est mijotée avec de l'origan frais et du basilic. Garnie de mozzarella filante, notre Margarita est un best-seller absolu. Vous pouvez également opter pour la "Fruits de Mer" avec des délices pêchés directement au port de Safi, ou la "Carnivore" pour les gros appétits.</p>
+                <p>Et pour équilibrer le tout ? Nos salades sont de véritables tableaux colorés. La Salade Sa3id combine Laitue croquante, tomates cerises juteuses, concombres, olives noires locales, et de généreux morceaux de fromage feta, le tout arrosé de la meilleure huile d'olive vierge extra. C'est frais, c'est sain, et c'est le parfait accompagnement de vos plats. Chez Restaurant Sa3id, chaque membre de la famille ou de votre groupe d'amis trouvera exactement ce dont il a envie. Alors, qu'attendez-vous pour parcourir la carte de nos saveurs et faire votre choix ?</p>
+                <a href="contact.html" class="btn btn-primary mt-20" style="padding: 15px 40px; font-size: 1.2rem;">Passer votre commande maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo-footer">
+                    <img src="assets/logo.png" alt="Restaurant Sa3id Logo">
+                    <span>Sa3id</span>
+                </div>
+                <p>L'épicentre du goût au Centre de Safi.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Notre Menu</a></li>
+                    <li><a href="about.html">Notre Histoire</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Centre de Safi, Hda Tajin Lkbir</p>
+                <p><i class="fas fa-phone"></i> +212 600 000 000</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

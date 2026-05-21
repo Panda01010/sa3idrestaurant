@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Restaurant Sa3id Safi</title>
+    <meta name="description" content="Réservez votre table au Restaurant Sa3id à Safi. L'endroit idéal pour vos anniversaires, dîners en famille ou soirées match.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Restaurant Sa3id Logo">
+                <span>Sa3id</span>
+            </a>
+            <nav id="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Notre Menu</a>
+                <a href="about.html">Notre Histoire</a>
+                <a href="reservation.html" class="active-link">Réservation</a>
+                <a href="contact.html">Contact & Livraison</a>
+                <div class="lang-selector">
+                    <button>FR <i class="fas fa-chevron-down"></i></button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="lang-btn" data-lang="EN">EN</a>
+                        <a href="#" class="lang-btn" data-lang="AR">AR</a>
+                        <a href="#" class="lang-btn" data-lang="ES">ES</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/pizza.png');">
+        <div class="container text-center">
+            <h1>Réservez Votre Expérience</h1>
+            <p>Assurez-vous d'avoir la meilleure table. Pour un déjeuner d'affaires rapide ou une soirée mémorable en famille.</p>
+        </div>
+    </div>
+
+    <!-- Reservation Text & Info -->
+    <section class="section">
+        <div class="container content-grid">
+            <div class="content-text">
+                <h2 class="section-title text-left">Pourquoi Réserver chez Sa3id ?</h2>
+                <p>Le Restaurant Sa3id est devenu le cœur battant du centre-ville de Safi. Surtout les soirs de week-end et pendant les diffusions des grands matchs de football, notre établissement est pris d'assaut par les amateurs de bonne ambiance et de nourriture exquise. Pour vous garantir la meilleure expérience possible et éviter les longues attentes, nous mettons à votre disposition ce système de réservation simple et rapide.</p>
+                <p>Mais la réservation chez nous, ce n'est pas seulement garantir une chaise. C'est l'assurance d'un service personnalisé. Vous prévoyez de célébrer un événement spécial ? Un anniversaire mémorable, l'obtention d'un diplôme, ou une simple réunion de famille ? Faites-le nous savoir lors de votre réservation ! Notre équipe adore participer à vos moments de joie. Nous pouvons organiser des tables VIP, prévoir des décorations légères, et même préparer une petite surprise de la part de l'équipe du restaurant. Notre but est que vous vous sentiez comme un invité d'honneur à chaque visite.</p>
+                <p>En réservant à l'avance, surtout pour les groupes de plus de 5 personnes, vous permettez également à notre brigade en cuisine de s'organiser pour que tous vos plats (Tacos, Pizzas, Shawarmas) arrivent chauds et en même temps sur votre table. Fini les déjeuners où la moitié de la table regarde l'autre manger. L'efficacité, la convivialité et l'anticipation sont nos mots d'ordre pour rendre votre repas exceptionnel du début à la fin. Ne laissez pas votre repas au hasard, planifiez votre visite dès aujourd'hui !</p>
+                <div class="mt-20">
+                    <p><strong><i class="fas fa-info-circle text-primary"></i> Note importante :</strong> Les réservations du week-end doivent être effectuées idéalement 24h à l'avance. Pour les réservations urgentes de groupes le jour même, merci de nous appeler directement par téléphone.</p>
+                </div>
+            </div>
+
+            <!-- Reservation Form Block -->
+            <div class="reservation-form-container">
+                <div class="reservation-card" style="background: var(--white); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 5px solid var(--primary-color);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 20px; text-align: center; color: var(--text-dark);">Formulaire de Réservation</h3>
+                    <form id="reservation-form-page" class="reservation-form">
+                        <div style="margin-bottom: 15px;">
+                            <label style="font-weight: 600; margin-bottom: 5px; display: block;">Nom et Prénom</label>
+                            <input type="text" placeholder="Ex: Karim Safi" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="font-weight: 600; margin-bottom: 5px; display: block;">Numéro de Téléphone</label>
+                            <input type="tel" placeholder="06 XX XX XX XX" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                            <div style="flex: 1;">
+                                <label style="font-weight: 600; margin-bottom: 5px; display: block;">Date</label>
+                                <input type="date" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                            </div>
+                            <div style="flex: 1;">
+                                <label style="font-weight: 600; margin-bottom: 5px; display: block;">Heure</label>
+                                <input type="time" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="font-weight: 600; margin-bottom: 5px; display: block;">Nombre de Personnes</label>
+                            <input type="number" placeholder="Combien serez-vous ?" min="1" max="30" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        </div>
+                        <div style="margin-bottom: 25px;">
+                            <label style="font-weight: 600; margin-bottom: 5px; display: block;">Demande Spéciale (Optionnel)</label>
+                            <textarea placeholder="Anniversaire, Chaise haute pour bébé, etc." rows="3" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" style="font-size: 1.1rem; padding: 15px;">Confirmer la Réservation</button>
+                    </form>
+                    
+                    <div id="form-success-page" class="hidden text-success" style="text-align: center; padding: 30px 10px;">
+                        <i class="fas fa-check-circle" style="font-size: 4rem; margin-bottom: 15px; color: #2a9d8f;"></i>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 10px; color: var(--text-dark);">Réservation Confirmée !</h4>
+                        <p>Merci pour votre réservation. Notre équipe a bien reçu vos informations et votre table sera préparée avec soin. Nous avons hâte de vous accueillir !</p>
+                        <button id="reset-reservation" class="btn btn-outline" style="margin-top: 20px; color: var(--primary-color); border-color: var(--primary-color);">Faire une autre réservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo-footer">
+                    <img src="assets/logo.png" alt="Restaurant Sa3id Logo">
+                    <span>Sa3id</span>
+                </div>
+                <p>Réservez, asseyez-vous, et laissez-nous vous régaler.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Notre Menu</a></li>
+                    <li><a href="about.html">Notre Histoire</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Centre de Safi, Hda Tajin Lkbir</p>
+                <p><i class="fas fa-phone"></i> +212 600 000 000</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
